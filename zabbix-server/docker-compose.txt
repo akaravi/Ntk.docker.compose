@@ -1,7 +1,8 @@
 #befor :
 
 
-
+sudo mkdir env_vars
+sudo chmod 777 -R env_vars/
 
 ##after:
 
