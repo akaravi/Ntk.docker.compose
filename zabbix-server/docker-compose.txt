@@ -3,6 +3,9 @@
 
 sudo mkdir env_vars
 sudo chmod 777 -R env_vars/
+sudo chmod 777 -R zbx_env/
+
+
 
 ##after:
 
@@ -11,3 +14,4 @@ docker-compose up -d
 ##other
  docker compose stop
 docker ps --no-trunc
+
