@@ -7,3 +7,7 @@ sudo chmod 777 -R env_vars/
 ##after:
 
 docker-compose up -d
+
+##other
+ docker compose stop
+docker ps --no-trunc
