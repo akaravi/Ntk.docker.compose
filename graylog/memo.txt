@@ -1,0 +1,8 @@
+#befor :
+
+
+
+
+##after:
+
+docker-compose up -d

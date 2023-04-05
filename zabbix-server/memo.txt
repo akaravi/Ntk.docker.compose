@@ -1,0 +1,42 @@
+##befor :
+
+
+sudo mkdir /zabbix-data
+sudo mkdir /zabbix-data/alertscripts
+sudo mkdir /zabbix-data/externalscripts
+sudo mkdir /zabbix-data/export
+sudo mkdir /zabbix-data/modules
+sudo mkdir /zabbix-data/enc
+sudo mkdir /zabbix-data/ssh_keys
+sudo mkdir /zabbix-data/mibs
+sudo mkdir /zabbix-data/snmptraps
+sudo mkdir -p /zabbix-nginx/nginx
+sudo mkdir /zabbix-nginx/modules
+sudo mkdir /zabbix-mysql
+
+
+sudo chmod 777 -R /zabbix-data/
+sudo chmod 777 -R /zabbix-nginx/
+sudo chmod 777 /zabbix-mysql/
+
+
+
+
+##after:
+
+docker-compose up -d
+
+
+##For firewalld
+sudo firewall-cmd --permanent --add-port=10051/tcp
+sudo firewall-cmd --permanent --add-port=80/tcp
+sudo firewall-cmd --reload
+
+##For UFW
+sudo ufw allow 80/tcp
+sudo ufw allow 10051/tcp 
+
+
+
+Username: Admin
+Password: zabbix
