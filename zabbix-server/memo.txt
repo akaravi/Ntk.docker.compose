@@ -1,3 +1,5 @@
+#site info :
+https://www.roelpeters.be/solve-docker-error-unable-to-delete-must-be-forced-image-is-referenced-in-multiple-repositories/
 ##befor :
 
 
